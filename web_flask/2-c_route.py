@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This module uses strict_slashes=False in the path definition."""
+"""Starts a Flask web application."""
 
 from flask import Flask
 from markupsafe import escape
@@ -20,8 +20,10 @@ def Hello():
 
 
 @app.route("/c/<text>", strict_slashes=False)
-def World(text):
-     return f"C, {escape(text)}"
+def c(text):
+    """Displays 'C' followed by the value of <text>."""
+    text = text.replace("_", " ")
+    return "C {}".format(text)
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
