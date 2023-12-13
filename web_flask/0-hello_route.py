@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This module uses strict_slashes=False in the path definition."""
+"""Starts a Flask web application."""
 
 from flask import Flask
 
