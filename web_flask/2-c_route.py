@@ -9,6 +9,7 @@ app = Flask(__name__)
 
 """the route() decorator to tell Flask what URL should trigger our function"""
 
+
 @app.route("/", strict_slashes=False)
 def hello_world():
     return("Hello HBNB!")
