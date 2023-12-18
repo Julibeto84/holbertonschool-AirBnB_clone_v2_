@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
 
 """Starts a Flask web application.
@@ -58,8 +57,3 @@ def number_template(n):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
-=======
-
-
-
->>>>>>> 8b93c92 (updete commits)
