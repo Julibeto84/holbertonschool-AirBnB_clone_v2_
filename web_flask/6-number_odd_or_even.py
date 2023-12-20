@@ -14,12 +14,10 @@ Routes:
         - States whether <n> is even or odd in the body.
 """
 from flask import Flask
+from markupsafe import escape
 from flask import render_template
 
 app = Flask(__name__)
-app.jinja_env.trim_blocks = True
-app.jinja_env.lstrip_blocks = True
-
 
 @app.route("/", strict_slashes=False)
 def hello_hbnb():
